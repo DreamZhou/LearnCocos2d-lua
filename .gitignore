@@ -1,0 +1,4 @@
+#ignore 
+frameworks/cocos2d-x
+runtime/
+src/cocos
