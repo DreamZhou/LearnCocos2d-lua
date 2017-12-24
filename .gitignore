@@ -1,4 +1,13 @@
-#ignore 
+# ignore
+
+# directory
 frameworks/cocos2d-x
 runtime/
 src/cocos
+simulator/
+Debug.win32/
+.vs/
+.idea/
+
+# exe files
+*.exe

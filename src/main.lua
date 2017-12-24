@@ -4,6 +4,7 @@ cc.FileUtils:getInstance():setPopupNotify(false)
 require "config"
 require "cocos.init"
 
+
 local function main()
     require("app.MyApp"):create():run()
 end
