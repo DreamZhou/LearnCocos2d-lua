@@ -13,7 +13,6 @@
   <PropertyGroup Label="Globals">
     <ProjectGuid>{4E6A7A0E-DDD8-4BAA-8B22-C964069364ED}</ProjectGuid>
     <ProjectName>LearnCocos2d-lua</ProjectName>
-    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -24,7 +23,7 @@
     <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0' and exists('$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A')">v120_xp</PlatformToolset>
     <PlatformToolset Condition="'$(VisualStudioVersion)' == '14.0'">v140</PlatformToolset>
     <PlatformToolset Condition="'$(VisualStudioVersion)' == '14.0' and exists('$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A')">v140_xp</PlatformToolset>
-    <PlatformToolset Condition="'$(VisualStudioVersion)' == '15.0'">v140</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '15.0'">v141</PlatformToolset>
     <PlatformToolset Condition="'$(VisualStudioVersion)' == '15.0' and exists('$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A')">v141_xp</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
@@ -106,11 +105,11 @@
       <MkTypLibCompatible>false</MkTypLibCompatible>
       <TargetEnvironment>Win32</TargetEnvironment>
       <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <HeaderFileName>LearnCocos2d-lua.h</HeaderFileName>
-      <InterfaceIdentifierFileName>LearnCocos2d-lua_i.c</InterfaceIdentifierFileName>
-      <ProxyFileName>LearnCocos2d-lua_p.c</ProxyFileName>
+      <HeaderFileName>Carrot-lua.h</HeaderFileName>
+      <InterfaceIdentifierFileName>Carrot-lua_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>Carrot-lua_p.c</ProxyFileName>
       <GenerateStublessProxies>true</GenerateStublessProxies>
-      <TypeLibraryName>$(IntDir)/LearnCocos2d-lua.tlb</TypeLibraryName>
+      <TypeLibraryName>$(IntDir)/Carrot-lua.tlb</TypeLibraryName>
       <DllDataFileName>
       </DllDataFileName>
     </Midl>
@@ -130,9 +129,7 @@
   <ItemDefinitionGroup>
     <CustomBuildStep>
       <Command>if not exist "$(LocalDebuggerWorkingDirectory)" mkdir "$(LocalDebuggerWorkingDirectory)"
-xcopy /Y /Q "$(OutDir)*.dll" "$(LocalDebuggerWorkingDirectory)"
-xcopy "$(ProjectDir)..\..\..\res" "$(LocalDebuggerWorkingDirectory)\res" /D /E /I /F /Y
-xcopy "$(ProjectDir)..\..\..\src" "$(LocalDebuggerWorkingDirectory)\src" /D /E /I /F /Y</Command>
+xcopy /Y /Q "$(OutDir)*.dll" "$(LocalDebuggerWorkingDirectory)"</Command>
       <Outputs>$(TargetName).cab</Outputs>
       <Inputs>$(TargetFileName)</Inputs>
     </CustomBuildStep>
@@ -172,11 +169,11 @@ xcopy "$(ProjectDir)..\..\..\src" "$(LocalDebuggerWorkingDirectory)\src" /D /E /
       <MkTypLibCompatible>false</MkTypLibCompatible>
       <TargetEnvironment>Win32</TargetEnvironment>
       <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <HeaderFileName>LearnCocos2d-lua.h</HeaderFileName>
-      <InterfaceIdentifierFileName>LearnCocos2d-lua_i.c</InterfaceIdentifierFileName>
-      <ProxyFileName>LearnCocos2d-lua_p.c</ProxyFileName>
+      <HeaderFileName>Carrot-lua.h</HeaderFileName>
+      <InterfaceIdentifierFileName>Carrot-lua_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>Carrot-lua_p.c</ProxyFileName>
       <GenerateStublessProxies>true</GenerateStublessProxies>
-      <TypeLibraryName>$(IntDir)/LearnCocos2d-lua.tlb</TypeLibraryName>
+      <TypeLibraryName>$(IntDir)/Carrot-lua.tlb</TypeLibraryName>
       <DllDataFileName>
       </DllDataFileName>
     </Midl>
